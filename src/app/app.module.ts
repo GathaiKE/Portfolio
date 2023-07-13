@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     AboutComponent,
     ExperienceComponent,
     ProjectsComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    ContactComponent,
+    FooterComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
