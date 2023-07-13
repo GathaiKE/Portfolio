@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    button{@apply w-20 h-8 text-base text-cyan border-cyan bg-primary-light font-bold border active:bg-cyan active:text-primary-light}
+    a{@apply active:text-cyan hover:cursor-pointer hover:text-smokewhite}
+}
