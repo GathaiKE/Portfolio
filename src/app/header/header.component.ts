@@ -11,4 +11,8 @@ import { RouterModule } from '@angular/router';
 })
 export class HeaderComponent {
 
+
+  scrollAbout(){
+    document.getElementById('about')?.scrollIntoView()
+  }
 }

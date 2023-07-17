@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 @layer base{
-    button{@apply w-20 h-8 text-base text-cyan border-cyan bg-primary-light font-bold border active:bg-cyan active:text-primary-light}
+    button{@apply h-5 w-16 md:w-20 md:h-8 text-base text-cyan border-cyan bg-primary-light font-bold border active:bg-cyan active:text-primary-light}
     a{@apply active:text-cyan hover:cursor-pointer hover:text-smokewhite}
-    input{@apply w-96 h-10 px-2 text-base focus:outline-none}
-    textarea {@apply grow-0 text-base focus:outline-none p-2 w-96}
+    input{@apply md:w-96 w-72 h-10 px-2 text-base focus:outline-none}
+    textarea {@apply grow-0 text-base focus:outline-none p-2 md:w-96 w-72}
 }
