@@ -10,9 +10,13 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+showMenu=false
 
   scrollAbout(){
     document.getElementById('about')?.scrollIntoView()
+  }
+
+  openToggle(){
+    this.showMenu=!this.showMenu
   }
 }

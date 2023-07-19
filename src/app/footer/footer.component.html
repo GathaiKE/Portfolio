@@ -16,11 +16,11 @@
             <div class="flex flex-col">
                 <p class="text-smokewhite">Useful Links</p>
                 <a routerLink="/">Home</a>
-                <a routerLink="about">About</a>
-                <a routerLink="experience">Work</a>
-                <a routerLink="projects">Projects</a>
-                <a routerLink="testimonials">Testimonials</a>
-                <a routerLink="contact">Contact</a>
+                <a [routerLink]="['/about']">About</a>
+                <a [routerLink]="['/experience']">Work</a>
+                <a [routerLink]="['/projects']">Projects</a>
+                <a [routerLink]="['/testimonials']">Testimonials</a>
+                <a [routerLink]="['/contact']">Contact</a>
             </div>
             <div class="flex flex-col gap-3">
                 <p class="text-smokewhite">Contact Me</p>

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Portfolio';
 
-  scrollAbout(){
-    document.getElementById('about')?.scrollIntoView()
-  }
+  // scrollAbout(){
+  //   document.getElementById('about')?.scrollIntoView()
+  // }
 }
