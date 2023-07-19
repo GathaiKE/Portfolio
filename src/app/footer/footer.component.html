@@ -1,29 +1,26 @@
-<div class="bg-primary-dark flex flex-col self-end w-full h-fit text-white px-16 py-10 ">
-    <div class="flex gap-20">
+<div class="bg-primary-dark flex flex-col self-end w-full h-fit text-white px-8 md:px-16 py-10 text-sm">
+    <div class="flex flex-col md:flex-row gap-20">
         <div>
             <img src="../../assets/gathai-low-resolution-logo-color-on-transparent-background 1.png" alt="Logo">
         </div>
         <div class="flex gap-8">
-            <!-- <div class="flex flex-col gap-2">
-                <p class="text-smokewhite">Skills and Technologies</p>
-                <div class="grid grid-flow-row grid-cols-3 gap-3">
-                    <img src="../../assets/angular 1.png" alt="Angular" class="text-cyan">
-                    <img src="../../assets/express-js-icon 1.png" alt="Express" class="text-cyan">
-                    <img src="../../assets/js 1.png" alt="JavaScript" class="text-cyan">
-                    <img src="../../assets/typescript-programming-language-icon 1.png" alt="TypeScript" class="text-cyan">
-                    <img src="../../assets/node-js 1.png" alt="Nose" class="text-cyan">
-                    <img src="../../assets/tailwind-css-icon 1.png" alt="TailwindCSS" class="text-cyan">
-                    <img src="../../assets/sql-server-icon 1.png" alt="Sql Server" class="text-cyan">
-                </div>
-            </div> -->
+            <div class="hidden md:flex flex-col">
+                <p class="text-smokewhite">Services Offered</p>
+                <p>Front-End development</p>
+                <p>Back-End development</p>
+                <p>Database Management</p>
+                <p>API Developement</p>
+                <p>Quality Assurance & Quality Engineering</p>
+                <p>Web Design</p>
+            </div>
             <div class="flex flex-col">
                 <p class="text-smokewhite">Useful Links</p>
                 <a routerLink="/">Home</a>
-                <a routerLink="about">About</a>
-                <a routerLink="experience">Work</a>
-                <a routerLink="projects">Projects</a>
-                <a routerLink="testimonials">Testimonials</a>
-                <a routerLink="contact">Contact</a>
+                <a [routerLink]="['/about']">About</a>
+                <a [routerLink]="['/experience']">Work</a>
+                <a [routerLink]="['/projects']">Projects</a>
+                <a [routerLink]="['/testimonials']">Testimonials</a>
+                <a [routerLink]="['/contact']">Contact</a>
             </div>
             <div class="flex flex-col gap-3">
                 <p class="text-smokewhite">Contact Me</p>
@@ -35,12 +32,24 @@
                     <img src="../../assets/envelope-solid 1.png" alt="Gmail">
                     <span>gathaikariuki@gmail.com</span>
                 </div>
+                <div class="flex gap-2 hover:cursor-pointer lg:hidden">
+                    <img src="../../assets/linkedin 1.png" alt="LinkedIn">
+                    <span>LinkedIn</span>
+                </div>
+                <div class="flex gap-2 hover:cursor-pointer lg:hidden">
+                    <img src="../../assets/github 1.png" alt="Github">
+                    <span>Github</span>
+                </div>
+                <div class="flex gap-2 hover:cursor-pointer lg:hidden">
+                    <img src="../../assets/discord 1.png" alt="Discord">
+                    <span>Discord</span>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="flex justify-between px-10 py-2 w-full h-fit bg-primary-darker text-white">
+<div class="flex justify-between px-10 py-2 w-full h-fit bg-primary-darker text-white text-sm">
     <span>Copyright &copy;</span>
     <span>Made by Gathai Kariuki</span>
 </div>

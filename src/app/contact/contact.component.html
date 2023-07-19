@@ -1,1 +1,35 @@
-<p>contact works!</p>
+<app-header></app-header>
+<div class="flex">
+    <app-socials></app-socials>
+    
+    <div class="text-white lg:ml-40 w-full px-4 py-20 bg-primary-light">
+        <h2 class="text-cyan md:text-xl font-bold">Contact Me</h2>
+        <p class="text-smokewhite md:w-1/2 m-6">Would you like to talk to me, Write something here and I'll get back to you as soon as possible</p>
+        <!-- <span class="flex justify-center">
+        </span> -->
+        <form action="" class="flex flex-col gap-3 mt-11 mx-auto w-fit">
+            <div class="flex flex-col md:flex-row gap-3">
+                <label for="name" class=" w-20">Your Name</label>
+                <input type="text" placeholder="John Doe" class="bg-primary-dark">
+            </div>
+            <div class="flex flex-col md:flex-row gap-3">
+                <label for="email" class=" w-20">Your Email</label>
+                <input type="text" placeholder="johndoe@gmail.com" class="bg-primary-dark">
+            </div>
+            <div class="flex flex-col md:flex-row gap-3">
+                <label for="subject" class=" w-20">Subject</label>
+                <input type="text" placeholder="Write the subject of your message here..." class="bg-primary-dark">
+            </div>
+            <div class="flex flex-col md:flex-row gap-3">
+                <label for="message" class="h-fit w-20">Message</label>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Hello Brian, I hope you are having a great day..." class="bg-primary-dark"></textarea>
+            </div>
+            <div class="flex justify-end">
+                <button type="button">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <app-side-component></app-side-component>
+</div>
+<app-footer></app-footer>
