@@ -1,14 +1,16 @@
 <div class="w-full">
     <app-header></app-header>
-<div class="flex h-screen">
+<div class="flex min-h-full">
     <app-socials></app-socials>
 
-    <div class="w-full bg-primary-light text-white flex flex-col md:justify-center items-center md:items-start md:pl-4 py-20 gap-4 lg:ml-40">
-        <P class="text-cyan text-lg font-bold ">Welcome to my world, my name is</P>
-        <h1 class="text-4xl font-bold ">Brian Gathai Kariuki</h1>
-        <h2 class="text-smokewhite text-center text-3xl font-bold"> A full-Stack Software Developer</h2>
-        <p class="md:w-3/4 w-full text-lg px-3">Looking for a web wizard who can bring your ideas into life and make a positive impact Through the power of the web, you are in the right place, Lets take a trip though my world.</p>
-        <button class="flex self-start ml-4 mt-8 justify-center" [routerLink]="['/about']">Dive In</button>
+    <div class="w-full bg-primary-light text-white flex flex-col md:justify-center items-center md:items-start md:pl-4 py-20 px-3 gap-4 lg:ml-40">
+        <div class="my-auto">
+            <P class="text-cyan text-lg font-bold ">Welcome to my world, my name is</P>
+            <h1 class="text-4xl font-bold ">Brian Gathai Kariuki</h1>
+            <h2 class="text-smokewhite text-center text-3xl font-bold"> A full-Stack Software Developer</h2>
+            <p class="md:w-3/4 w-full text-lg px-3">Looking for a web wizard who can bring your ideas into life and make a positive impact Through the power of the web, you are in the right place, Lets take a trip though my world.</p>
+            <button class="flex self-start ml-4 mt-8 justify-center" [routerLink]="['/about']">Dive In</button>
+        </div>
     </div>
 
     <app-side-component></app-side-component>
