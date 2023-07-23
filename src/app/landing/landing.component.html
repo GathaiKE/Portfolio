@@ -1,15 +1,35 @@
-<div class="w-full">
+<!-- <div class="w-full">
     <app-header></app-header>
 <div class="flex min-h-full">
     <app-socials></app-socials>
 
     <div class="w-full bg-primary-light text-white flex flex-col md:justify-center items-center md:items-start md:pl-4 py-20 px-3 gap-4 lg:ml-40">
         <div class="my-auto">
-            <P class="text-cyan text-lg font-bold ">Welcome to my world, my name is</P>
-            <h1 class="text-4xl font-bold ">Brian Gathai Kariuki</h1>
-            <h2 class="text-smokewhite text-center text-3xl font-bold"> A full-Stack Software Developer</h2>
-            <p class="md:w-3/4 w-full text-lg px-3">Looking for a web wizard who can bring your ideas into life and make a positive impact Through the power of the web, you are in the right place, Lets take a trip though my world.</p>
-            <button class="flex self-start ml-4 mt-8 justify-center" [routerLink]="['/about']">Dive In</button>
+            <P class="text-cyan text-lg font-bold ">{{greeting}}</P>
+            <h1 class="text-4xl font-bold ">{{fullName}}</h1>
+            <h2 class="text-smokewhite text-center text-3xl font-bold">{{career}}</h2>
+            <p class="md:w-3/4 w-full text-lg px-3">{{pitch}}</p>
+            <button class="flex self-start ml-4 mt-8 justify-center" (click)="logger()">Dive In</button>
+        </div>
+    </div>
+
+    <app-side-component></app-side-component>
+</div>
+<app-footer></app-footer>
+</div> -->
+
+<div class="">
+    <app-header></app-header>
+<div class="flex md:h-screen">
+    <app-socials></app-socials>
+
+    <div class="bg-primary-light text-white py-20 flex items-center h-full md:ml-40">
+        <div class="w-11/12 mx-auto flex flex-col gap-3">
+            <P class=" font-bold md:text-lg">{{greeting}}</P>
+            <h1 class="text-cyan text-2xl font-bold md:text-4xl">{{fullName}}</h1>
+            <h2 class=" text-smokewhite text-lg font-bold md:text-2xl">{{career}}</h2>
+            <p class="text-base md:text-lg">{{pitch}}</p>
+            <button class="" (click)="logger()">Dive In</button>
         </div>
     </div>
 
