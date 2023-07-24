@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PortfolioService } from '../Services/portfolio.service';
 
 @Component({
   selector: 'app-side-component',
@@ -9,5 +10,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./side-component.component.css']
 })
 export class SideComponentComponent {
+
+  constructor(private Service:PortfolioService){}
+  email:string=this.Service.email
 
 }

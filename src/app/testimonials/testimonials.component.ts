@@ -4,6 +4,7 @@ import { SocialsComponent } from '../socials/socials.component';
 import { SideComponentComponent } from '../side-component/side-component.component';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { PortfolioService } from '../Services/portfolio.service';
 
 @Component({
   selector: 'app-testimonials',
@@ -13,5 +14,8 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrls: ['./testimonials.component.css']
 })
 export class TestimonialsComponent {
+
+  constructor(private Service:PortfolioService){}
+  testimonials=this.Service.Testimoials
 
 }

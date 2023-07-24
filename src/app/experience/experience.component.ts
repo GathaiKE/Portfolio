@@ -4,6 +4,7 @@ import { SocialsComponent } from '../socials/socials.component';
 import { SideComponentComponent } from '../side-component/side-component.component';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { PortfolioService } from '../Services/portfolio.service';
 
 @Component({
   selector: 'app-experience',
@@ -13,5 +14,9 @@ import { FooterComponent } from '../footer/footer.component';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent {
+
+  constructor(private Service:PortfolioService){}
+
+  experience=this.Service.experience
 
 }
