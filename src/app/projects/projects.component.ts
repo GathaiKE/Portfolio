@@ -5,6 +5,7 @@ import { SideComponentComponent } from '../side-component/side-component.compone
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { PortfolioService } from '../Services/portfolio.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -15,7 +16,11 @@ import { PortfolioService } from '../Services/portfolio.service';
 })
 export class ProjectsComponent {
 
-  constructor(private Service:PortfolioService){}
+  constructor(private Service:PortfolioService, private router:Router){}
   
   projects=this.Service.projects
+
+  nav(link:string){
+    window.open(link, '_blank')
+  }
 }

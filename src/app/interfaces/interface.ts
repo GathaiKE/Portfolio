@@ -10,12 +10,13 @@ export interface Job{
 
 export interface Project{
     id:number
-    image:string
+    displayImage:string
     title:string
     description:string
     liveLink:string
     githubLink:string
     technologiesUsed:string[]
+    production:boolean
 }
 
 export interface Testimonial{

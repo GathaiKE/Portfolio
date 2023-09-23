@@ -1,36 +1,108 @@
-<!-- <div class="w-full">
+<div class="w-full">
     <app-header></app-header>
-<div class="flex min-h-full">
-    <app-socials></app-socials>
+    <div class="flex md:h-screen heros">
+        <!-- hero section -->
+        <div class="bg-primary-hero h-full w-60 hidden lg:flex justify-center items-center">
+            <div class="flex flex-col gap-6">
+                <img src="../../assets/github 1.png" (click)="open(github)" alt="github">
+                <img src="../../assets/linkedin 1.png" alt="linkedIn" (click)="open(linkedin)">
+                <img src="../../assets/discord 1.png" alt="discord" (click)="open(discord)">
+            </div>
+        </div>
+        
+        <div class="text-white py-20 flex bg-primary-hero items-center h-full">
+            <div class="w-11/12 mx-auto flex flex-col gap-3">
+                <P class=" font-bold md:text-lg">{{greeting}}</P>
+                <h1 class="text-cyan text-2xl font-bold md:text-4xl">{{fullName}}</h1>
+                <h2 class=" text-smokewhite text-lg font-bold md:text-2xl">{{career}}</h2>
+                <p class="text-base md:text-lg">{{pitch}}</p>
+                <button class="" (click)="logger()">Dive In</button>
+            </div>
+        </div>
+        <div class="bg-primary-hero hidden lg:flex w-fit h-full justify-center items-center">
+            <div>
+                <p class="text-smokewhite rotate-90">{{email}}</p>
+            </div>
+        </div>
+    </div>
 
-    <div class="w-full bg-primary-light text-white flex flex-col md:justify-center items-center md:items-start md:pl-4 py-20 px-3 gap-4 lg:ml-40">
-        <div class="my-auto">
-            <P class="text-cyan text-lg font-bold ">{{greeting}}</P>
-            <h1 class="text-4xl font-bold ">{{fullName}}</h1>
-            <h2 class="text-smokewhite text-center text-3xl font-bold">{{career}}</h2>
-            <p class="md:w-3/4 w-full text-lg px-3">{{pitch}}</p>
-            <button class="flex self-start ml-4 mt-8 justify-center" (click)="logger()">Dive In</button>
+<!-- About -->
+<div class="flex">
+    <app-socials class="lg:fixed"></app-socials>
+
+    <div class="w-full top-10 bg-primary-light flex flex-col py-20 gap-10 md:gap-2  text-white">
+        <h2 class="text-cyan text-base md:text-xl font-bold">About {{firstName}}</h2>
+        <div class="flex flex-col-reverse md:flex-row gap-3">
+            <div class="p-3 text-base md:text-lg">
+                <p>{{statement}}</p>
+            </div>
+            <div>
+                <div class="bg-primary-light border-4 border-cyan mx-10 w-40 h-40 md:w-72 md:h-72">
+                    <img src="../../assets/pppIMG-20221220-WA0010.jpg" alt="" class="bg-cyan border-2 border-cyan w-40 h-40 md:w-72 md:h-72 mx-5 -mt-6 -ml-5">
+                </div>
+            </div>
         </div>
     </div>
 
     <app-side-component></app-side-component>
 </div>
-<app-footer></app-footer>
-</div> -->
 
-<div class="">
-    <app-header></app-header>
-<div class="flex md:h-screen">
+<!-- Skills -->
+
+<div class="flex">
+    <app-socials></app-socials>
+    <div class="bg-primary-light text-white w-full h-fit">
+        <h2 class="text-cyan text-base md:text-xl font-bold">My skills and Frameworks</h2>
+        <div class="flex gap-3 justify-evenly flex-wrap mt-3 items-end">
+            <span class="flex flex-col gap-3">
+                <img src="../../assets/angular 2.png" alt="">
+                <label for="angular" class="text-smokewhite w-full text-center">Angular</label>
+            </span>
+            <span class="flex flex-col gap-3">
+                <img src="../../assets/express-js-icon 2.png" alt="">
+                <label for="express" class="text-smokewhite w-full text-center">Express</label>
+            </span>
+            <span class="flex flex-col gap-3">
+                <img src="../../assets/js 2.png" alt="javascript">
+                <label for="javascript" class="text-smokewhite w-full text-center">JavaScript</label>
+            </span>
+            <span class="flex flex-col gap-3">
+                <img src="../../assets/node-js 2.png" alt="node.js">
+                <label for="node" class="text-smokewhite w-full text-center">Node Js</label>
+            </span>
+            <span class="flex flex-col gap-3">
+                <img src="../../assets/tailwind-css-icon 2.png" alt="tailwind">
+                <label for="tailwind" class="text-smokewhite w-full text-center">Tailwind CSS</label>
+            </span>
+            <span class="flex flex-col gap-3">
+                <img src="../../assets/typescript-programming-language-icon 2.png" alt="typescript">
+                <label for="typescript" class="text-smokewhite w-full text-center">Typescript</label>
+            </span>
+            <span class="flex flex-col gap-3">
+                <img src="../../assets/sql-server-icon 1.png" alt="SQL server">
+                <label for="SQL server" class="text-smokewhite w-full text-center">SQL server</label>
+            </span>
+        </div>
+    </div>
+    <!-- <app-side-component></app-side-component> -->
+</div>
+<!-- testimonials -->
+<div class="flex">
     <app-socials></app-socials>
 
-    <div class="bg-primary-light text-white py-20 flex items-center h-full md:ml-40">
-        <div class="w-11/12 mx-auto flex flex-col gap-3">
-            <P class=" font-bold md:text-lg">{{greeting}}</P>
-            <h1 class="text-cyan text-2xl font-bold md:text-4xl">{{fullName}}</h1>
-            <h2 class=" text-smokewhite text-lg font-bold md:text-2xl">{{career}}</h2>
-            <p class="text-base md:text-lg">{{pitch}}</p>
-            <button class="" (click)="logger()">Dive In</button>
-        </div>
+    <div class="text-white w-full bg-primary-light py-20">
+            <h2 class="md:text-xl text-cyan font-bold">Some Kind Words Said To Me Before</h2>
+                <div class="mt-5 flex gap-4 flex-wrap flex-shrink md:justify-evenly justify-center ">
+                    <div *ngFor="let card of testimonials">
+                        <div class="bg-primary-darker w-64 p-3 rounded flex flex-col gap-3">
+                            <span class="flex flex-col-reverse gap-2 items-center">
+                                <label for="The Jitu" class="text-smokewhite font-bold">{{card.name}}</label>
+                                <div class="bg-cyan rounded-full w-14 h-14"></div>
+                            </span>
+                            <p class="text-base">{{card.text}}</p>
+                        </div>
+                    </div>
+                </div>
     </div>
 
     <app-side-component></app-side-component>

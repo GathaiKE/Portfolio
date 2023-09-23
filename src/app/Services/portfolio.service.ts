@@ -56,14 +56,15 @@ export class PortfolioService {
     projects:Project[]=[
       {
         id:1,
-        title:"Pro's Overflow",
-        image:"",
+        title:"Portfolio",
+        displayImage:"../../assets/portfolio.png",
         liveLink:"",
         githubLink:"",
         technologiesUsed:['Angular','Node','Express','MsSQL','TailwindCSS','Typescript','NgRx'],
         description:`
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, impedit, eveniet itaque reiciendis aspernatur accusamus quibusdam officiis laborum at maxime pariatur amet corporis? Consequatur alias pariatur accusamus iste repudiandae et veniam! Provident, suscipit. Consequuntur harum reprehenderit assumenda ducimus saepe facilis, maiores doloremque ratione velit repellendus voluptas illum. Explicabo alias modi quod numquam cupiditate, similique consectetur, nam minus esse at nihil ut vitae reprehenderit voluptatem sunt beatae illum ullam maxime magni! Repudiandae cupiditate at fugit molestias, saepe ipsam! Dicta commodi dolorum accusamus quae iste quo amet, aliquid modi quos hic ducimus laudantium, nemo alias dolores aliquam! Eaque veritatis id vero facere!
-        `
+        `,
+        production:false
       }
     ]
 

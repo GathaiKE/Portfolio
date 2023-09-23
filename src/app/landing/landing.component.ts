@@ -27,9 +27,22 @@ export class LandingComponent {
   pitch=this.Service.pitchText
   career=this.Service.career
   fullName=this.firstName+" "+this.secondName+" "+this.surname
+  statement:string=this.Service.aboutStatement
+  rSkills:string[]=this.Service.myLSkills
+  lSkills:string[]=this.Service.myRSkills
+  piture:string=this.Service.profilePicture
+  linkedin:string = this.Service.linkedIn
+  discord:string = this.Service.discord
+  github:string = this.Service.github
+  testimonials=this.Service.Testimoials
+  email:string = this.Service.email
 
 logger(){
   this.Route.navigate(['/about'])
+}
+
+open(link:string){
+  window.open(link, '_blank')
 }
   
   
