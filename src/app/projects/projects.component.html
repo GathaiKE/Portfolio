@@ -7,7 +7,7 @@
         <div class="flex flex-col md:flex-row md:gap-8 gap-6 px-4" *ngFor="let project of projects">
             <div>
                 <div class="bg-primary-light border-4 border-cyan mx-10 w-40 h-40 md:w-72 md:h-72">
-                    <div class="bg-cyan w-40 h-40 md:w-72 md:h-72 mx-5 -mt-4 -ml-4"></div>
+                    <img class="bg-cyan w-40 h-40 md:w-72 md:h-72 mx-5 -mt-4 -ml-4 border-1 border-cyan" src="{{project.displayImage}}" alt="">
                 </div>
             </div>
             <div class="flex flex-col gap-3">
@@ -22,8 +22,8 @@
                     </div>
                 </div>
                 <span class="gap-10 flex">
-                    <button>Git Hub</button>
-                    <button>Live</button>
+                    <button (click)="nav(project.githubLink)" *ngIf="!project.production" >Git Hub</button>
+                    <button (click)="nav(project.liveLink)">Live</button>
                 </span>
             </div>
         </div>
