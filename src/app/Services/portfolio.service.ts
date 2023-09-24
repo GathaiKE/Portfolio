@@ -24,7 +24,7 @@ export class PortfolioService {
     salutation:string="Hello and welcome to my world, My name is"
     career:string="Full-Stack Software Delveloper"
     pitchText:string=`
-    Looking for a web wizard who can bring your ideas into life and make a positive impact Through the power of the web, you are in the right place, Lets take a trip though my world.
+    I'm an experienced Full Stack Software Developer with a deep passion for crafting high-quality digital solutions for my clients. In my world, I explore the limitless possibilities that code can unlock. Join me on a journey through my work and discover the power of innovation.
     `
 
     //About Page
@@ -76,7 +76,10 @@ export class PortfolioService {
       image:'',
       name:"The Jitu",
       text:`
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eos aliquid eius asperiores laborum quaerat provident repellendus? Nemo, totam! Dolorem magnam vitae suscipit accusamus, eius eveniet quaerat sint commodi maxime adipisci tempora ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eos aliquid eius asperiores laborum quaerat provident repellendus? Nemo, totam! Dolorem magnam vitae suscipit accusamus, eius eveniet quaerat sint commodi maxime adipisci tempora ad
+      He was enthusiastic about developing scripts and finding solutions during his internship, and
+      he had a self-driven desire to learn new things. He is fast in understanding instructions and
+      adaptable when the original plan needs to be changed. He is an effective communicator both
+      orally and in writing.
       `
     },
     {
