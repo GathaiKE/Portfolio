@@ -1,8 +1,8 @@
 <div class="w-full">
     <app-header></app-header>
-    <div class="flex md:h-screen heros">
+    <div class="flex h-screen w- full heros">
         <!-- hero section -->
-        <div class="bg-primary-hero h-full w-60 hidden lg:flex justify-center items-center">
+        <div class="bg-primary-hero md:h-full w-60 hidden lg:flex justify-center items-center">
             <div class="flex flex-col gap-6">
                 <img src="../../assets/github 1.png" (click)="open(github)" alt="github">
                 <img src="../../assets/linkedin 1.png" alt="linkedIn" (click)="open(linkedin)">
@@ -16,7 +16,7 @@
                 <h1 class="text-cyan text-2xl font-bold md:text-4xl">{{fullName}}</h1>
                 <h2 class=" text-smokewhite text-lg font-bold md:text-2xl">{{career}}</h2>
                 <p class="text-base md:text-lg">{{pitch}}</p>
-                <button class="" (click)="logger()">Dive In</button>
+                <button class="bg-black" (click)="logger()">Dive In</button>
             </div>
         </div>
         <div class="bg-primary-hero hidden lg:flex w-fit h-full justify-center items-center">
@@ -27,10 +27,10 @@
     </div>
 
 <!-- About -->
-<div class="flex">
+<div class="flex ">
     <app-socials class="lg:fixed"></app-socials>
 
-    <div class="w-full top-10 bg-primary-light flex flex-col py-20 gap-10 md:gap-2  text-white">
+    <div class="w-full top-10 bg-primary-light flex flex-col py-20 gap-10 md:gap-2 lg:px-20 md:px-10 text-white">
         <h2 class="text-cyan text-base md:text-xl font-bold">About {{firstName}}</h2>
         <div class="flex flex-col-reverse md:flex-row gap-3">
             <div class="p-3 text-base md:text-lg">
@@ -51,11 +51,11 @@
 
 <div class="flex">
     <app-socials></app-socials>
-    <div class="bg-primary-light text-white w-full h-fit">
+    <div class="bg-primary-light text-white w-full lg:px-20 md:px-10 h-fit">
         <h2 class="text-cyan text-base md:text-xl font-bold">My skills and Frameworks</h2>
         <div class="flex gap-3 justify-evenly flex-wrap mt-3 items-end">
             <span class="flex flex-col gap-3">
-                <img src="../../assets/angular 2.png" alt="">
+                <img src="../../assets/angular 2.png" class="w-28" alt="">
                 <label for="angular" class="text-smokewhite w-full text-center">Angular</label>
             </span>
             <span class="flex flex-col gap-3">
@@ -90,7 +90,7 @@
 <div class="flex">
     <app-socials></app-socials>
 
-    <div class="text-white w-full bg-primary-light py-20">
+    <div class="text-white w-full bg-primary-light lg:p-20 md:px-10">
             <h2 class="md:text-xl text-cyan font-bold">Some Kind Words Said To Me Before</h2>
                 <div class="mt-5 flex gap-4 flex-wrap flex-shrink md:justify-evenly justify-center ">
                     <div *ngFor="let card of testimonials">
