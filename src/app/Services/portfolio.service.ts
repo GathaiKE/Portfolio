@@ -14,9 +14,8 @@ export class PortfolioService {
     secondName:string="Gathai"
     surname:string="Kariuki"
     email:string="gathaikariuki@gmail.com"
-    linkedIn:string=""
-    github:string=""
-    discord:string=""
+    linkedIn:string="https://www.linkedin.com/in/gathai-kariuki-061234228"
+    github:string="https://github.com/GathaiKE"
     phone:string="+25471 216 6018"
 
   //Landing Page
@@ -26,13 +25,10 @@ export class PortfolioService {
     pitchText:string=`
     Welcome to the realm where lines of code craft dreams into reality! I'm a seasoned Full Stack Software Developer fueled by a relentless passion for weaving digital marvels. Journey alongside me as we unravel the boundless possibilities that code unveils, exploring the transformative power of innovation woven into every pixel and line of my work..
     `
-    // pithText:string=`
-    // I'm an experienced Full Stack Software Developer with a deep passion for crafting high-quality digital solutions for my clients. In my world, I explore the limitless possibilities that code can unlock. Join me on a journey through my work and discover the power of innovation
-    // `
 
     //About Page
     aboutStatement:string=`
-    So who is Gathai? I am a passionate full-stack developer passionate about crafting innovative solutions that bridge the gap between intricate backend systems and intuitive user interfaces. With a solid foundation in a variety of programming languages, frameworks, and tools, I thrive on the challenges inherent in the software development realm. Throughout my career, I've had the privilege of leveraging my skills to build projects that optimize database performance, design seamless user experiences, and develop robust backend infrastructures. My approach combines technical prowess with a collaborative spirit, enabling me to seamlessly integrate within multidisciplinary teams and deliver high-quality products. I'm deeply committed to staying updated on the latest industry trends and technologies, ensuring that my work remains at the forefront of innovation. I'm always excited about the opportunity to contribute my skills to forward-thinking projects that push boundaries and make a meaningful impact so if you have one, I am waiting to hear about it.
+    So who is Gathai? I am a full-stack developer passionate about crafting innovative solutions that bridge the gap between intricate backend systems and intuitive user interfaces. With a solid foundation in a variety of programming languages, frameworks, and tools, I thrive on the challenges inherent in the software development realm. Throughout my career, I've had the privilege of leveraging my skills to build projects that optimize database performance, design seamless user experiences, and develop robust backend infrastructures. My approach combines technical prowess with a collaborative spirit, enabling me to seamlessly integrate within multidisciplinary teams and deliver high-quality products. I'm deeply committed to staying updated on the latest industry trends and technologies, ensuring that my work remains at the forefront of innovation. I'm always excited about the opportunity to contribute my skills to forward-thinking projects that push boundaries and make a meaningful impact so if you have one, I am waiting to hear about it.
     `
 
     myLSkills:string[]=['HTML',' CSS','JavaScript','Typescript','Angular','Node','PHP']
@@ -63,7 +59,7 @@ export class PortfolioService {
         displayImage:"../../assets/portfolio.png",
         liveLink:"https://gathaikariuki.vercel.app/",
         githubLink:"https://github.com/GathaiKE/Portfolio",
-        technologiesUsed:['Angular','Node','Express','MsSQL','TailwindCSS','Typescript','NgRx'],
+        technologiesUsed:['Figma','Angular','TailwindCSS','Typescript'],
         description:`
         My portfolio serves as my inaugural and primary project, embodying my journey and showcasing my skills as a burgeoning developer. Crafted with meticulous attention to detail, this project represents a culmination of my technical expertise, creativity, and passion for software development. Designed as a showcase of my capabilities, it encapsulates a blend of intuitive user interface design and robust backend functionalities. Leveraging a modern tech stack and employing responsive design principles, my portfolio demonstrates my proficiency in designing beautiful interfaces with figma and interpreting the design into realistic and responsive websites using Angular and Tailwind CSS frameworks. Each element, from layout to interactive features, has been thoughtfully curated to not only exhibit my technical prowess but also reflect my personal style and commitment to excellence. Through this project, I aim to present my skills, experiences, and aspirations while providing visitors with an immersive glimpse into my capabilities and achievements in the world of software development."
         `,
