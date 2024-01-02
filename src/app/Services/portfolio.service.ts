@@ -14,6 +14,7 @@ export class PortfolioService {
     secondName:string="Gathai"
     surname:string="Kariuki"
     email:string="gathaikariuki@gmail.com"
+    discord:string=""
     linkedIn:string="https://www.linkedin.com/in/gathai-kariuki-061234228"
     github:string="https://github.com/GathaiKE"
     phone:string="+25471 216 6018"
