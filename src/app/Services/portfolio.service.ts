@@ -18,6 +18,7 @@ export class PortfolioService {
     linkedIn:string="https://www.linkedin.com/in/gathai-kariuki-061234228"
     github:string="https://github.com/GathaiKE"
     phone:string="+25471 216 6018"
+    service_id:string="service_9mpn0zc"
 
   //Landing Page
     
