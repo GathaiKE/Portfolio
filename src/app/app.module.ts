@@ -25,7 +25,6 @@ import { ContactComponent } from './contact/contact.component';
     SideComponentComponent,
     FooterComponent,
     LandingComponent,
-    AboutComponent,
     ExperienceComponent,
     ProjectsComponent,
     TestimonialsComponent,
