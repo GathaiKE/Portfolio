@@ -13,7 +13,7 @@ export interface Project{
     displayImage:string
     title:string
     description:string
-    liveLink:string
+    liveLink?:string
     githubLink:string
     technologiesUsed:string[]
     production:boolean
