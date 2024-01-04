@@ -4,27 +4,29 @@
 
     <div class="bg-primary-light text-white w-full lg:ml-40 py-20 flex flex-col gap-7">
         <h2 class="md:text-xl text-cyan font-bold">My Projects</h2>
-        <div class="flex flex-col md:flex-row md:gap-8 gap-6 px-4" *ngFor="let project of projects">
-            <div>
-                <div class="bg-primary-light border-4 border-cyan mx-10 w-40 h-40 md:w-72 md:h-72">
-                    <img class="bg-cyan w-40 h-40 md:w-72 md:h-72 mx-5 -mt-4 -ml-4 border-1 border-cyan" src="{{project.displayImage}}" alt="">
-                </div>
-            </div>
-            <div class="flex flex-col gap-3">
-                <h3 class="text-cyan text-lg underline underline-offset-2 font-bold">{{project.title}}</h3>
-                <p class="break-words text-base md:text-lg">{{project.description}}</p>
-                <h3 class="underline text-smokewhite underline-offset-2 font-bold">Technologies Used</h3>
-                <div class="flex gap-3 flex-wrap">
-                    <div *ngFor="let t of project.technologiesUsed">
-                        <span class="flex gap-2 w-fit">
-                            <label for="{{t}}" class="text-cyan font-bold">.</label><span>{{t}}</span>
-                        </span>
+        <div *ngFor="let project of projects" class="mb-16">
+            <div [ngClass]="(project.id%2!=0)?'flex flex-col md:flex-row md:gap-8 gap-6 px-4':'md:flex-row-reverse flex md:gap-8 gap-6 px-4'">
+                <div class="mt-24">
+                    <div class="bg-primary-light border-4 border-cyan mx-10 w-40 h-40 md:w-72 md:h-72">
+                        <img class="bg-cyan w-40 h-40 md:w-72 md:h-72 mx-5 -mt-4 -ml-4 border-1 border-cyan" src="{{project.displayImage}}" alt="">
                     </div>
                 </div>
-                <span class="gap-10 flex">
-                    <button (click)="nav(project.githubLink)" *ngIf="!project.production" >Git Hub</button>
-                    <button (click)="nav(project.liveLink)">Live</button>
-                </span>
+                <div class="flex flex-col gap-3">
+                    <h3 class="text-cyan text-lg underline underline-offset-2 font-bold">{{project.title}}</h3>
+                    <p class="break-words text-base md:text-lg">{{project.description}}</p>
+                    <h3 class="underline text-smokewhite underline-offset-2 font-bold">Technologies Used</h3>
+                    <div class="flex gap-3 flex-wrap">
+                        <div *ngFor="let t of project.technologiesUsed">
+                            <span class="flex gap-2 w-fit">
+                                <label for="{{t}}" class="text-cyan font-bold">.</label><span>{{t}}</span>
+                            </span>
+                        </div>
+                    </div>
+                    <span class="gap-10 flex">
+                        <button  (click)="nav(project.githubLink)" *ngIf="!project.production" >Git Hub</button>
+                        <button *ngIf="project.liveLink" (click)="nav(project.liveLink)">Live</button>
+                    </span>
+                </div>
             </div>
         </div>
     </div>

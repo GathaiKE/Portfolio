@@ -19,6 +19,7 @@ export class PortfolioService {
     github:string="https://github.com/GathaiKE"
     phone:string="+25471 216 6018"
     service_id:string="service_9mpn0zc"
+    logo:string=""
 
   //Landing Page
     
@@ -59,11 +60,32 @@ export class PortfolioService {
         id:1,
         title:"Portfolio",
         displayImage:"../../assets/portfolio.png",
-        liveLink:"https://gathaikariuki.vercel.app/",
         githubLink:"https://github.com/GathaiKE/Portfolio",
         technologiesUsed:['Figma','Angular','TailwindCSS','Typescript'],
         description:`
-        My portfolio serves as my inaugural and primary project, embodying my journey and showcasing my skills as a burgeoning developer. Crafted with meticulous attention to detail, this project represents a culmination of my technical expertise, creativity, and passion for software development. Designed as a showcase of my capabilities, it encapsulates a blend of intuitive user interface design and robust backend functionalities. Leveraging a modern tech stack and employing responsive design principles, my portfolio demonstrates my proficiency in designing beautiful interfaces with figma and interpreting the design into realistic and responsive websites using Angular and Tailwind CSS frameworks. Each element, from layout to interactive features, has been thoughtfully curated to not only exhibit my technical prowess but also reflect my personal style and commitment to excellence. Through this project, I aim to present my skills, experiences, and aspirations while providing visitors with an immersive glimpse into my capabilities and achievements in the world of software development."
+        My portfolio serves as my inaugural and primary project, embodying my journey and showcasing my skills My portfolio stands as a testament to my journey and skills as a developer. It reflects meticulous attention to detail and embodies my technical expertise and creativity. Showcasing intuitive UI design and robust backend functionalities, it leverages modern tech like Figma, Angular, and Tailwind CSS. Every aspect, from layout to interactivity, demonstrates my commitment to excellence and personal style. Through this project, I aim to exhibit my capabilities, experiences, and aspirations in software development.
+        `,
+        production:false
+      },
+      {
+        id:2,
+        title:"Realers Real Estate Agency",
+        displayImage:"../../assets/realers.png",
+        githubLink:"https://github.com/GathaiKE/Realers",
+        technologiesUsed:["Figma","PHP","HTML","MySQL","CSS","AJAX"],
+        description:`
+        Realers is a PHP, MySQL, and CSS-powered platform revolutionizing rentals. It seamlessly integrates house hunting, rental management, and secure payments. Users access a user-friendly interface for property search and detailed listings, while landlords benefit from streamlined management tools. Tenants use a dedicated portal for lease management, maintenance requests, and secure rent payments, aided by automated reminders and transparent financial tracking. Prioritizing user security, the platform ensures safe transactions and data privacy, fostering improved communication between tenants and landlords. By simplifying processes, Realers aims to redefine the rental experience, enhancing convenience for both tenants and property managers in a secure, efficient rental ecosystem
+        `,
+        production:false
+      },
+      {
+        id:3,
+        title:"Zion Valley",
+        displayImage:"../../assets/zion.png",
+        githubLink:"https://github.com/GathaiKE/Zion-Valley",
+        technologiesUsed:["Figma","ReactJS","MongoDB","CSS","Express","Node"],
+        description:`
+        Realers is a PHP, MySQL, and CSS-powered platform revolutionizing rentals. It seamlessly integrates house hunting, rental management, and secure payments. Users access a user-friendly interface for property search and detailed listings, while landlords benefit from streamlined management tools. Tenants use a dedicated portal for lease management, maintenance requests, and secure rent payments, aided by automated reminders and transparent financial tracking. Prioritizing user security, the platform ensures safe transactions and data privacy, fostering improved communication between tenants and landlords. By simplifying processes, Realers aims to redefine the rental experience, enhancing convenience for both tenants and property managers in a secure, efficient rental ecosystem
         `,
         production:false
       }

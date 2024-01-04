@@ -2,7 +2,7 @@
     <img src="../../assets/gathai-low-resolution-logo-color-on-transparent-background 1.png" alt="Logo" class="hover:cursor-pointer  w-30 h-7 md:hidden" routerLink="/">
     <img src="../../assets/gathai-low-resolution-logo-color-on-transparent-background 1.png" alt="Logo" class="hover:cursor-pointer hidden md:block" routerLink="/">
     <div class="text-white justify-evenly hidden md:flex gap-4">
-        <a [routerLink]="['/experience']" routerLinkActive="text-cyan md:border-b-2 border-cyan">Work</a>
+        <a [routerLink]="['/experience']" routerLinkActive="text-cyan md:border-b-2 border-cyan">Experience</a>
         <a [routerLink]="['/projects']" routerLinkActive="text-cyan md:border-b-2 border-cyan">Projects</a>
         <a [routerLink]="['/contact']" routerLinkActive="text-cyan md:border-b-2 border-cyan">Contact</a>
         <button (click)="downloadResume()" >Resume</button>
@@ -19,7 +19,6 @@
         <div class="" [hidden]="!showMenu">
             <div id="menu" class="absolute flex flex-col w-72 text-center items-center self-end py-2 mt-4 space-y-2 font-bold bg-primary-dark text-white text-base right-1 drop-shadow-md z-10">
                 <a [routerLink]="['/']" routerLinkActiveExact="text-cyan" class="w-full p-2">Home</a>
-                <a [routerLink]="['/about']" routerLinkActive="text-cyan" class="w-full p-2">About</a>
                 <a [routerLink]="['/experience']" routerLinkActive="text-cyan" class="w-full p-2">Experience</a>
                 <a [routerLink]="['/projects']" routerLinkActive="text-cyan" class="w-full p-2">My Projects</a>
                 <a [routerLink]="['/testimonials']" routerLinkActive="text-cyan" class="w-full p-2">Testimonials</a>
