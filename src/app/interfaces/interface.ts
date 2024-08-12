@@ -6,6 +6,8 @@ export interface Job{
     startDate:string
     endDate:string
     JobDescription:string
+    duties: Duty[]
+    skills:Skill[]
 }
 
 export interface Project{
@@ -24,4 +26,14 @@ export interface Testimonial{
     image:string
     name:string
     text:string
+}
+
+interface Duty {
+    id:number
+    description:string
+}
+
+interface Skill {
+    id:number
+    name:string
 }

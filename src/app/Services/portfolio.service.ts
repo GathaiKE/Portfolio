@@ -49,7 +49,106 @@ export class PortfolioService {
         endDate:"June 2023",
         JobDescription:`
         During my tenure as a Software Developer Intern at The Jitu, I actively contributed to the development team, gaining hands-on experience in software design, coding, testing, and debugging. Working closely with seasoned developers, I participated in various stages of the software development lifecycle, assisting in the creation and enhancement of applications. This internship provided me with valuable insights into agile methodologies, collaborative problem-solving, and the practical application of programming languages and frameworks in a professional environment. I engaged in tasks such as web design, front-end and backend development, designing and developing databases, state management, unit and end to end testing among others, which allowed me to apply theoretical knowledge to real-world scenarios while refining my technical skills and fostering a deeper understanding of software development practices.
-        `
+        `,
+        duties:[
+          {
+            id:1,
+            description:  'Report to the Cheif Training Officer.'
+          },
+          {
+            id:2,
+            description:  'Translatedesigna into user friendly interfaces.'
+          },
+          {
+            id:3,
+            description:  'Develop and maintain mobile applications to optimize service delivery.'
+          },
+          {
+            id:4,
+            description:  'Deploy and maintain software on cloud platforms expecially AWS.'
+          },
+          {
+            id:5,
+            description:  'Search engine optimization.'
+          }
+        ],
+        skills:[
+          {
+            id:1,
+            name:  'Angular',
+          },
+          {
+            id:1,
+            name:  'AWS Cloud',
+          },
+          {
+            id:1,
+            name:  'Cypress',
+          },
+          {
+            id:1,
+            name:  'MsSQL',
+          },
+          {
+            id:1,
+            name:  'Node',
+          }
+        ]
+      },
+      {
+        id:2,
+        title:"Full-Stack",
+        level:"Junior Software Developer",
+        company:"Cintelcore Limited",
+        startDate:"February 2024",
+        endDate:"To date",
+        JobDescription:`
+        During my tenure as a Software Developer Intern at The Jitu, I actively contributed to the development team, gaining hands-on experience in software design, coding, testing, and debugging. Working closely with seasoned developers, I participated in various stages of the software development lifecycle, assisting in the creation and enhancement of applications. This internship provided me with valuable insights into agile methodologies, collaborative problem-solving, and the practical application of programming languages and frameworks in a professional environment. I engaged in tasks such as web design, front-end and backend development, designing and developing databases, state management, unit and end to end testing among others, which allowed me to apply theoretical knowledge to real-world scenarios while refining my technical skills and fostering a deeper understanding of software development practices.
+        `,
+        duties:[
+          {
+            id:1,
+            description:  'Report to the Cheif Technical Officer.'
+          },
+          {
+            id:2,
+            description:  'Translatedesigna into user friendly interfaces.'
+          },
+          {
+            id:3,
+            description:  'Develop and maintain mobile applications to optimize service delivery.'
+          },
+          {
+            id:4,
+            description:  'Deploy and maintain software on cloud platforms expecially AWS.'
+          },
+          {
+            id:5,
+            description:  'Search engine optimization.'
+          }
+        ],
+        skills:[
+          {
+            id:1,
+            name:  'Angular',
+          },
+          {
+            id:1,
+            name:  'React',
+          },
+          {
+            id:1,
+            name:  'Django',
+          },
+          {
+            id:1,
+            name:  'Flutter',
+          },
+          {
+            id:1,
+            name:  'Postgres',
+          }
+        ]
       }
     ]
 
@@ -58,14 +157,15 @@ export class PortfolioService {
     projects:Project[]=[
       {
         id:1,
-        title:"Portfolio",
-        displayImage:"../../assets/portfolio.png",
-        githubLink:"https://github.com/GathaiKE/Portfolio",
-        technologiesUsed:['Figma','Angular','TailwindCSS','Typescript'],
+        title:"Cintelcore Ams",
+        displayImage:"../../assets/cintelcoreams.jpeg",
+        githubLink:"",
+        liveLink:'https://vmsapp.cintelcoreams.com/',
+        technologiesUsed:['Figma','Angular','TailwindCSS','Django', 'Postgres', 'AWS'],
         description:`
-        My portfolio serves as my inaugural and primary project, embodying my journey and showcasing my skills My portfolio stands as a testament to my journey and skills as a developer. It reflects meticulous attention to detail and embodies my technical expertise and creativity. Showcasing intuitive UI design and robust backend functionalities, it leverages modern tech like Figma, Angular, and Tailwind CSS. Every aspect, from layout to interactivity, demonstrates my commitment to excellence and personal style. Through this project, I aim to exhibit my capabilities, experiences, and aspirations in software development.
+        I was part of the team tha came up with this amazing software for visitor traffic monitoring and management. It works by offering a smooth and effective method for companies and organizations to control the flow of visitors into their facilities by automating visitor registration procedure, streamlining checkins and strengthening security measures thanks to cutting edge texhnology and user friendly interfaces.
         `,
-        production:false
+        production:true
       },
       {
         id:2,
@@ -88,7 +188,20 @@ export class PortfolioService {
         Realers is a PHP, MySQL, and CSS-powered platform revolutionizing rentals. It seamlessly integrates house hunting, rental management, and secure payments. Users access a user-friendly interface for property search and detailed listings, while landlords benefit from streamlined management tools. Tenants use a dedicated portal for lease management, maintenance requests, and secure rent payments, aided by automated reminders and transparent financial tracking. Prioritizing user security, the platform ensures safe transactions and data privacy, fostering improved communication between tenants and landlords. By simplifying processes, Realers aims to redefine the rental experience, enhancing convenience for both tenants and property managers in a secure, efficient rental ecosystem
         `,
         production:false
+      },
+      {
+        id:4,
+        title:"Portfolio",
+        displayImage:"../../assets/portfolio.png",
+        githubLink:"https://github.com/GathaiKE/Portfolio",
+        technologiesUsed:['Figma','Angular','TailwindCSS','Typescript'],
+        description:`
+        My portfolio serves as my inaugural and primary project, embodying my journey and showcasing my skills My portfolio stands as a testament to my journey and skills as a developer. It reflects meticulous attention to detail and embodies my technical expertise and creativity. Showcasing intuitive UI design and robust backend functionalities, it leverages modern tech like Figma, Angular, and Tailwind CSS. Every aspect, from layout to interactivity, demonstrates my commitment to excellence and personal style. Through this project, I aim to exhibit my capabilities, experiences, and aspirations in software development.
+        `,
+        production:false
       }
+
+      
     ]
 
 

@@ -12,10 +12,12 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectComponent } from './projects/project/project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+<div class="flex flex-col gap-6 px-4 md:w-3/4 text-base md:text-lg" *ngIf="job$ | async  as job ">
+    <div>
+        <div class="flex flex-col md:flex-row justify-between text-smokewhite ">
+            <p>{{job.title}} {{job.level}}</p>
+            <span>{{job.startDate}} - {{job.endDate}}</span>
+        </div>
+        <p >{{job.JobDescription}}</p>
+    </div>
+    <div>
+        <h2 class="text-smokewhite font-medium">Responsibilit<span *ngIf="job.duties.length > 1">ies</span><span *ngIf="job.duties.length <= 1">y</span></h2>
+        <ul class="w-full h-full flex flex-col gap-5">
+            <li *ngFor="let duty of job.duties" class="ml-3 list-disc">{{duty.description}}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2 class="text-smokewhite font-medium">Skill<span *ngIf="job.skills.length > 1">s</span> gained</h2>
+        <ul class="w-full h-full flex gap-5">
+            <li *ngFor="let duty of job.skills" class="ml-3 list-disc">{{duty.name}}</li>
+        </ul>
+    </div>
+    
+</div>
