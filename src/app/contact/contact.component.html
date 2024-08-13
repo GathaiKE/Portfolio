@@ -2,26 +2,24 @@
 <div class="flex">
     <app-socials></app-socials>
     
-    <div class="text-white lg:ml-40 w-full px-4 py-20 bg-primary-light">
+    <div class="text-white lg:ml-40 min-h-screen w-full px-4 py-20 bg-primary-light">
         <h2 class="text-cyan md:text-xl font-bold">Contact Me</h2>
         <p class="text-smokewhite md:w-1/2 m-6">Would you like to talk to me, Write something here and I'll get back to you as soon as possible</p>
-        <!-- <span class="flex justify-center">
-        </span> -->
         <form  [formGroup]="contactForm"  (ngSubmit)="onSubmit($event)" class="flex flex-col gap-3 mt-11 mx-auto w-fit">
             <div class="flex flex-col md:flex-row gap-3">
-                <label for="name" class=" w-20">Your Name</label>
+                <label for="name" class=" w-24">Your Name <span class="text-red-500">*</span></label>
                 <input type="text" placeholder="John Doe" formControlName="name" class="bg-primary-dark">
             </div>
             <div class="flex flex-col md:flex-row gap-3">
-                <label for="email" class=" w-20">Your Email</label>
+                <label for="email" class=" w-24">Your Email <span class="text-red-500">*</span></label>
                 <input type="email" formControlName="email" placeholder="johndoe@gmail.com" class="bg-primary-dark">
             </div>
             <div class="flex flex-col md:flex-row gap-3">
-                <label for="subject" class=" w-20">Subject</label>
+                <label for="subject" class=" w-24">Subject <span class="text-red-500">*</span></label>
                 <input type="text" formControlName="subject" placeholder="Write the subject of your message here..." class="bg-primary-dark">
             </div>
             <div class="flex flex-col md:flex-row gap-3">
-                <label for="message" class="h-fit w-20">Message</label>
+                <label for="message" class="h-fit w-24">Message <span class="text-red-500">*</span></label>
                 <textarea name="message" formControlName="message" id="" cols="30" rows="10" placeholder="Hello Brian, I hope you are having a great day..." class="bg-primary-dark"></textarea>
             </div>
             <div class="flex justify-end">
@@ -33,3 +31,5 @@
     <app-side-component></app-side-component>
 </div>
 <app-footer></app-footer>
+
+<app-feedback [message]="response" [status]="status" *ngIf="showFeedback"></app-feedback>
