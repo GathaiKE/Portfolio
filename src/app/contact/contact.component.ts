@@ -8,11 +8,12 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angul
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { environment } from 'environments/environment';
 import { PortfolioService } from '../Services/portfolio.service';
+import { FeedbackComponent } from '../utilities/feedback/feedback.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule,SocialsComponent,SideComponentComponent,FooterComponent,HeaderComponent, ReactiveFormsModule],
+  imports: [CommonModule,SocialsComponent,SideComponentComponent,FooterComponent,HeaderComponent, ReactiveFormsModule, FeedbackComponent],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
@@ -23,6 +24,9 @@ export class ContactComponent implements OnInit{
   templateId:string = environment.TEMPLATE_ID
   userId:string = environment.USER_ID
   name:string = this.service.firstName+" "+this.service.secondName+" "+this.service.surname
+  response:string = ''
+  status:boolean = true
+  showFeedback:boolean = false
 
 ngOnInit(): void {
   this.contactForm = this.fb.group({
@@ -46,9 +50,22 @@ onSubmit(e:Event){
   e.preventDefault();
   emailjs.send(this.serviceId, this.templateId, data, this.userId)
     .then((result: EmailJSResponseStatus) => {
-      console.log(result.text);
+      
+      this.response = "Message sent successfully!"
+      this.status = true
+      this.showFeedback = true
+
+      setTimeout(() => {
+        this.showFeedback = false
+      }, 2500);
     }, (error) => {
-      console.log(error.text);
+      this.response = error.text+":Failed to send!"
+      this.status = false
+      this.showFeedback = true
+      
+      setTimeout(() => {
+        this.showFeedback = false
+      }, 2500);
     });
 
 }

@@ -33,3 +33,5 @@
     <app-side-component></app-side-component>
 </div>
 <app-footer></app-footer>
+
+<app-feedback [message]="response" [status]="status" *ngIf="showFeedback"></app-feedback>
