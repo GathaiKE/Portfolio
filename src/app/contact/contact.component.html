@@ -7,22 +7,22 @@
         <p class="text-smokewhite md:w-1/2 m-6">Would you like to talk to me, Write something here and I'll get back to you as soon as possible</p>
         <!-- <span class="flex justify-center">
         </span> -->
-        <form  action="https://formspree.io/f/xanwjaye"  method="POST" class="flex flex-col gap-3 mt-11 mx-auto w-fit">
+        <form  [formGroup]="contactForm"  (ngSubmit)="onSubmit($event)" class="flex flex-col gap-3 mt-11 mx-auto w-fit">
             <div class="flex flex-col md:flex-row gap-3">
                 <label for="name" class=" w-20">Your Name</label>
-                <input type="text" placeholder="John Doe" name="name" class="bg-primary-dark" required>
+                <input type="text" placeholder="John Doe" formControlName="name" class="bg-primary-dark">
             </div>
             <div class="flex flex-col md:flex-row gap-3">
                 <label for="email" class=" w-20">Your Email</label>
-                <input type="email" name="email" placeholder="johndoe@gmail.com" class="bg-primary-dark" required>
+                <input type="email" formControlName="email" placeholder="johndoe@gmail.com" class="bg-primary-dark">
             </div>
             <div class="flex flex-col md:flex-row gap-3">
                 <label for="subject" class=" w-20">Subject</label>
-                <input type="text" name="subject" placeholder="Write the subject of your message here..." class="bg-primary-dark" required>
+                <input type="text" formControlName="subject" placeholder="Write the subject of your message here..." class="bg-primary-dark">
             </div>
             <div class="flex flex-col md:flex-row gap-3">
                 <label for="message" class="h-fit w-20">Message</label>
-                <textarea name="message" name="message" id="" cols="30" rows="10" placeholder="Hello Brian, I hope you are having a great day..." class="bg-primary-dark" required></textarea>
+                <textarea name="message" formControlName="message" id="" cols="30" rows="10" placeholder="Hello Brian, I hope you are having a great day..." class="bg-primary-dark"></textarea>
             </div>
             <div class="flex justify-end">
                 <button type="submit">Send</button>

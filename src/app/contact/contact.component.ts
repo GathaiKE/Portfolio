@@ -6,6 +6,8 @@ import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { environment } from 'environments/environment';
+import { PortfolioService } from '../Services/portfolio.service';
 
 @Component({
   selector: 'app-contact',
@@ -15,8 +17,12 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit{
-  constructor(private fb:FormBuilder){}
+  constructor(private fb:FormBuilder, private service:PortfolioService){}
   contactForm!:FormGroup<any>
+  serviceId: string = environment.SERVICE_ID
+  templateId:string = environment.TEMPLATE_ID
+  userId:string = environment.USER_ID
+  name:string = this.service.firstName+" "+this.service.secondName+" "+this.service.surname
 
 ngOnInit(): void {
   this.contactForm = this.fb.group({
@@ -28,9 +34,17 @@ ngOnInit(): void {
 }
 
 onSubmit(e:Event){
-  console.log('FormValue', this.contactForm.value)
+  let formData = this.contactForm.value
+
+  const data = {
+    from_name:formData.name as string,
+    to_name: this.name,
+    subject:formData.subject as string,
+    message:formData.message as string
+  }
+
   e.preventDefault();
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target as HTMLFormElement, 'YOUR_USER_ID')
+  emailjs.send(this.serviceId, this.templateId, data, this.userId)
     .then((result: EmailJSResponseStatus) => {
       console.log(result.text);
     }, (error) => {
