@@ -160,7 +160,7 @@ export class PortfolioService {
         title:"Cintelcore Ams",
         displayImage:"../../assets/cintelcoreams.jpeg",
         githubLink:"",
-        liveLink:'https://vmsapp.cintelcoreams.com/',
+        liveLink:'https://appvms.cintelcoreams.com/',
         technologiesUsed:['Figma','Angular','TailwindCSS','Django', 'Postgres', 'AWS'],
         description:`
         I was part of the team tha came up with this amazing software for visitor traffic monitoring and management. It works by offering a smooth and effective method for companies and organizations to control the flow of visitors into their facilities by automating visitor registration procedure, streamlining checkins and strengthening security measures thanks to cutting edge texhnology and user friendly interfaces.
